@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import {
+  ClockIcon,
+  EnvelopeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 
@@ -11,24 +16,24 @@ export const metadata: Metadata = {
 
 const contactDetails = [
   {
-    icon: Phone,
+    icon: PhoneIcon,
     label: "Phone",
     value: "+234 803 365 1598",
     href: "tel:+2348033651598",
   },
   {
-    icon: Mail,
+    icon: EnvelopeIcon,
     label: "Email",
     value: "hello@quickcarry.ng",
     href: "mailto:hello@quickcarry.ng",
   },
   {
-    icon: MapPin,
+    icon: MapPinIcon,
     label: "Location",
     value: "Abuja, Nigeria",
   },
   {
-    icon: Clock,
+    icon: ClockIcon,
     label: "Response time",
     value: "Within 1 business day",
   },

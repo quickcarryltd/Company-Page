@@ -1,10 +1,16 @@
-import { ArrowRight, BarChart3, CreditCard, TrendingUp, Users2 } from "lucide-react";
+import {
+  ArrowRightIcon,
+  ArrowTrendingUpIcon,
+  ChartBarIcon,
+  CreditCardIcon,
+  UsersIcon,
+} from "@heroicons/react/24/solid";
 import SectionHeading from "./SectionHeading";
 
 const dashboardStats = [
-  { label: "Revenue trend", value: "+18%", icon: TrendingUp },
-  { label: "Repeat customers", value: "64%", icon: Users2 },
-  { label: "Failed deliveries", value: "0.4%", icon: BarChart3 },
+  { label: "Revenue trend", value: "+18%", icon: ArrowTrendingUpIcon },
+  { label: "Repeat customers", value: "64%", icon: UsersIcon },
+  { label: "Failed deliveries", value: "0.4%", icon: ChartBarIcon },
 ];
 
 const businessPerks = [
@@ -40,7 +46,7 @@ export default function ForBusiness() {
               className="group mt-8 inline-flex items-center gap-2 border-2 border-volt bg-volt px-7 py-4 text-sm font-bold uppercase tracking-wide text-ink transition-transform hover:-translate-y-0.5"
             >
               Get early business access
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
 
@@ -77,7 +83,7 @@ export default function ForBusiness() {
                 ))}
               </div>
               <p className="mt-2 flex items-center gap-1.5 text-[11px] uppercase tracking-wide text-ink/50">
-                <CreditCard className="h-3 w-3" />
+                <CreditCardIcon className="h-3 w-3" />
                 Deliveries per day, last 7 days
               </p>
             </div>

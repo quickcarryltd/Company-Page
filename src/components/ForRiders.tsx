@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { riderFeatures } from "@/lib/content";
 import SectionHeading from "./SectionHeading";
 
@@ -19,7 +19,7 @@ export default function ForRiders() {
             className="group flex shrink-0 items-center gap-2 border-2 border-ink bg-ink px-7 py-4 text-sm font-bold uppercase tracking-wide text-cream transition-transform hover:-translate-y-0.5"
           >
             Sign up to ride
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
 
@@ -27,7 +27,7 @@ export default function ForRiders() {
           {riderFeatures.map(({ icon: Icon, title, description }) => (
             <div key={title} className="border-2 border-ink bg-cream p-6">
               <span className="flex h-11 w-11 items-center justify-center border-2 border-ink bg-ink">
-                <Icon className="h-5 w-5 text-gold" strokeWidth={2.25} />
+                <Icon className="h-6 w-6 text-gold" />
               </span>
               <h3 className="mt-5 text-base font-black uppercase tracking-tight text-ink">
                 {title}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -38,7 +38,7 @@ export default function FaqPage() {
               className="group flex shrink-0 items-center gap-2 border-2 border-volt bg-volt px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-ink transition-transform hover:-translate-y-0.5"
             >
               Contact us
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </div>

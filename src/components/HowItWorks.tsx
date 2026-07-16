@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { trackingMilestones } from "@/lib/content";
 import SectionHeading from "./SectionHeading";
 
@@ -25,10 +25,7 @@ function StepCard({
         >
           {index + 1}/{trackingMilestones.length}
         </span>
-        <Icon
-          className={`h-5 w-5 ${isLast ? "text-volt" : "text-ink"}`}
-          strokeWidth={2.25}
-        />
+        <Icon className={`h-6 w-6 ${isLast ? "text-volt" : "text-ink"}`} />
       </div>
       <p className="text-sm font-bold uppercase leading-tight tracking-tight">
         {label}
@@ -59,7 +56,7 @@ export default function HowItWorks() {
                 </div>
                 {!isLast && (
                   <div className="flex shrink-0 items-center" aria-hidden>
-                    <ArrowRight className="h-5 w-5 text-ink/30" strokeWidth={2.5} />
+                    <ArrowRightIcon className="h-5 w-5 text-ink/30" />
                   </div>
                 )}
               </li>

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { ArrowRight, Compass, Handshake, Layers, ScanEye } from "lucide-react";
+import {
+  ArrowRightIcon,
+  GlobeAltIcon,
+  HandRaisedIcon,
+  Square3Stack3DIcon,
+  EyeIcon,
+} from "@heroicons/react/24/solid";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
@@ -11,25 +17,25 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    icon: ScanEye,
+    icon: EyeIcon,
     title: "Transparency",
     description:
       "Prices locked for 10 minutes, photo verification at pickup and drop-off, and live milestone tracking. No vague ETAs, no surprise fees.",
   },
   {
-    icon: Handshake,
+    icon: HandRaisedIcon,
     title: "Fairness",
     description:
       "Riders scored on more than stars — punctuality, professionalism, and delivery quality — with instant cash out and shift planning that respects their time.",
   },
   {
-    icon: Compass,
+    icon: GlobeAltIcon,
     title: "Convenience",
     description:
       "One app for instant delivery, sending anything, scheduled runs, and multi-stop pickups. Group delivery and price comparison built in, not bolted on.",
   },
   {
-    icon: Layers,
+    icon: Square3Stack3DIcon,
     title: "Ecosystem thinking",
     description:
       "Business wallets, delivery credits, and merchant analytics turn QuickCarry from an app into infrastructure for how Abuja moves things.",
@@ -133,7 +139,7 @@ export default function AboutPage() {
               className="group flex items-center justify-center gap-2 border-2 border-ink bg-ink px-7 py-4 text-sm font-bold uppercase tracking-wide text-cream transition-transform hover:-translate-y-0.5"
             >
               Join the waitlist
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
               href="/contact"

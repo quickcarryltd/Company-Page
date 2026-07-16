@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Plus } from "lucide-react";
+import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 import type { FaqItem } from "@/lib/content";
 
 export default function FaqAccordion({ items }: { items: FaqItem[] }) {
@@ -25,11 +25,11 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
               <span className="text-base font-bold uppercase tracking-tight text-ink sm:text-lg">
                 {item.question}
               </span>
-              <Plus
-                className={`h-5 w-5 shrink-0 text-ink transition-transform ${
-                  isOpen ? "rotate-45" : ""
-                }`}
-              />
+              {isOpen ? (
+                <MinusIcon className="h-5 w-5 shrink-0 text-ink" />
+              ) : (
+                <PlusIcon className="h-5 w-5 shrink-0 text-ink" />
+              )}
             </button>
             {isOpen && (
               <div className="border-t-2 border-ink bg-volt/10 px-6 py-5">

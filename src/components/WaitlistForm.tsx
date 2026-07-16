@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 type Role = "customer" | "rider" | "business";
 
@@ -30,7 +30,7 @@ export default function WaitlistForm() {
   if (submitted) {
     return (
       <div className="mx-auto flex max-w-xl flex-col items-center gap-3 border-2 border-ink bg-cream p-8 text-center">
-        <CheckCircle2 className="h-10 w-10 text-ink" />
+        <CheckCircleIcon className="h-10 w-10 text-ink" />
         <p className="text-lg font-black uppercase tracking-tight text-ink">
           You&apos;re on the list
         </p>

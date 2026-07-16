@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Phone } from "lucide-react";
+import { MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 
 const columns = [
   {
@@ -26,8 +26,8 @@ const columns = [
     links: [
       { label: "FAQs", href: "/faq" },
       { label: "Contact", href: "/contact" },
-      { label: "Terms of Service", href: "/contact" },
-      { label: "Privacy Policy", href: "/contact" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Privacy Policy", href: "/privacy" },
     ],
   },
 ];
@@ -51,14 +51,14 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 flex items-center gap-2 text-sm text-ink/70">
-              <MapPin className="h-4 w-4 shrink-0 text-navy" />
+              <MapPinIcon className="h-4 w-4 shrink-0 text-navy" />
               Abuja, Nigeria
             </p>
             <a
               href="tel:+2348033651598"
               className="mt-2 flex items-center gap-2 text-sm text-ink/70 hover:text-navy"
             >
-              <Phone className="h-4 w-4 shrink-0 text-navy" />
+              <PhoneIcon className="h-4 w-4 shrink-0 text-navy" />
               +234 803 365 1598
             </a>
           </div>

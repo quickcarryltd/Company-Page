@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { CheckIcon } from "@heroicons/react/24/solid";
 import { rewardFeatures } from "@/lib/content";
 import SectionHeading from "./SectionHeading";
 
@@ -35,7 +35,7 @@ export default function PlusSection() {
             <ul className="mt-6 space-y-3">
               {plusPerks.map((perk) => (
                 <li key={perk} className="flex items-start gap-2 text-sm font-medium">
-                  <Check className="mt-0.5 h-4 w-4 shrink-0" />
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0" />
                   {perk}
                 </li>
               ))}

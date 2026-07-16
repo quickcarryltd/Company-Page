@@ -20,7 +20,7 @@ export default function Differentiators() {
               className="border-2 border-ink bg-cream p-6 transition-transform hover:-translate-y-1 hover:shadow-[5px_5px_0_0_#0e0e10]"
             >
               <span className="flex h-11 w-11 items-center justify-center border-2 border-ink bg-ink">
-                <Icon className="h-5 w-5 text-volt" strokeWidth={2.25} />
+                <Icon className="h-6 w-6 text-volt" />
               </span>
               <h3 className="mt-5 text-base font-black uppercase tracking-tight text-ink">
                 {title}
