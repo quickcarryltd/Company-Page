@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf6ec;
+  --foreground: #0e0e10;
+
+  --ink: #0e0e10;
+  --cream: #faf6ec;
+
+  /* Brand identity, sampled straight from the logo mark */
+  --navy: #17394f;
+  --navy-dim: #0e2233;
+  --steel: #8b96a3;
+
+  /* Energetic accents */
+  --volt: #d7ff3d;
+  --gold: #e8a33d;
+
+  --line: #0e0e10;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+  --color-navy: var(--navy);
+  --color-navy-dim: var(--navy-dim);
+  --color-steel: var(--steel);
+  --color-volt: var(--volt);
+  --color-gold: var(--gold);
+  --color-line: var(--line);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Bold, offset "hard" shadows instead of soft blur — no blur radius, sits flush against a border */
+.hard-shadow {
+  box-shadow: 6px 6px 0 0 var(--ink);
+}
+.hard-shadow-sm {
+  box-shadow: 4px 4px 0 0 var(--ink);
+}
+.hard-shadow-volt {
+  box-shadow: 6px 6px 0 0 var(--volt);
+}
+.hard-shadow-cream {
+  box-shadow: 6px 6px 0 0 var(--cream);
+}
+
+/* Angled section dividers */
+.cut-bottom-right {
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+.cut-top-left {
+  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+.cut-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+}
