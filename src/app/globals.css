@@ -54,13 +54,18 @@ body {
   box-shadow: 6px 6px 0 0 var(--cream);
 }
 
-/* Angled section dividers */
-.cut-bottom-right {
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-}
-.cut-top-left {
-  clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
-}
-.cut-bottom-left {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+/* Angled section dividers. Percentage-based clips are risky on mobile,
+   where stacked content makes sections much taller — the same 12%
+   can eat into text near the clipped edge. Only cut on wider screens,
+   where section height is more contained. */
+@media (min-width: 640px) {
+  .cut-bottom-right {
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+  }
+  .cut-top-left {
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+  }
+  .cut-bottom-left {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 88%);
+  }
 }
